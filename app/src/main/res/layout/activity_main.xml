@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shadow" />
+
+    <com.dd.ShadowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="11.5dp"
+        android:layout_marginTop="16dp"
+        app:sl_cornerRadius="30dp"
+        app:sl_dx="0dp"
+        app:sl_dy="-4px"
+        app:sl_shadowColor="@color/colorShadow"
+        app:sl_shadowRadius="4px">
+
+        <View
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:background="@drawable/round" />
+    </com.dd.ShadowLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBlack1">
+
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/icon_home"
+                android:layout_width="21dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="8.5dp"
+                android:background="@mipmap/index_nor" />
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.5dp"
+                android:text="首页"
+                android:textColor="@color/colorPink1"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_personal"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/icon_personal"
+                android:layout_width="21dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="8.5dp"
+                android:background="@mipmap/mine_nor" />
+
+            <TextView
+                android:id="@+id/text_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.5dp"
+                android:text="我的"
+                android:textColor="@color/colorPink2"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.lihonghui.vinci.common.widget.view.StateSelectButton
+        android:id="@+id/icon_post"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="22dp"
+        app:normal_state_background="@mipmap/dribbble_nor"
+        app:press_state_background="@mipmap/dribbble_sel"/>
+
+    <TextView
+        android:id="@+id/text_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布"
+        android:textSize="10sp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorPink2"/>
+
+</FrameLayout>

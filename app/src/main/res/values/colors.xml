@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF343434</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+
+    <color name="colorGray">#FFF2F2F2</color>
+    <color name="colorGray1">#B3FFFFFF</color>
+    <color name="colorGray2">#94FFFFFF</color>
+    <color name="colorGray3">#FF999999</color>
+    <color name="colorGray4">#FFF5F5F5</color>
+    <color name="colorGray5">#FFF0F0F0</color>
+
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorWhite1">#94FFFFFF</color>
+    <color name="colorWhite2">#CCFFFFFF</color>
+    <color name="colorWhite3">#66FFFFFF</color>
+    <color name="colorWhite6">#FFFAFAFA</color>
+
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorBlack1">#FF292929</color>
+    <color name="colorBlack2">#FF282828</color>
+    <color name="colorBlack3">#CC343434</color>
+    <color name="colorBlack4">#FF343434</color>
+    <color name="colorBlack5">#94000000</color>
+    <color name="colorBlack6">#DE000000</color>
+    <color name="colorBlack7">#8A000000</color>
+    <color name="colorBlack8">#FF353535</color>
+
+    <color name="colorShadow">#3D000000</color>
+    <color name="colorShadow1">#66000000</color>
+
+    <color name="colorPink1">#FFEA508B</color>
+    <color name="colorPink2">#66E9508B</color>
+    <color name="colorPink3">#FFC32361</color>
+    <color name="colorPink4">#FFEA4C89</color>
+    <color name="colorPink5">#99EA4C89</color>
+</resources>

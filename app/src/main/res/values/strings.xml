@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Vinci</string>
+    <string name="loading">Loading</string>
+    <string name="logging">Logging</string>
+    <string name="title_login">Login</string>
+    <string name="fans">Fans</string>
+    <string name="followings">Followings</string>
+    <string name="login_hint">Login and Enjoy</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="attachments">attachments</string>
+    <string name="comments">comments</string>
+    <string name="load_all">Load All</string>
+    <string name="shot">shot</string>
+    <string name="bucket_hint">Add to Bucket</string>
+    <string name="create_bucket">+Create Bucket</string>
+    <string name="create_title">Create Bucket</string>
+    <string name="confirm">Confirm</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_hint">Please select a favorites</string>
+    <string name="bucket_name">Bucket Name</string>
+    <string name="bucket_describe">Bucket Describe(optional)</string>
+</resources>

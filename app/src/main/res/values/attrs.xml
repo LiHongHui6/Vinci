@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateSelectButton">
+        <attr name="normal_state_text" format="string" />
+        <attr name="press_state_text" format="string" />
+        <attr name="normal_state_text_color" format="reference|color" />
+        <attr name="press_state_text_color" format="reference|color" />
+        <attr name="normal_state_background" format="reference|color" />
+        <attr name="press_state_background" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="card">
+        <attr name="itemMarginTop" format="dimension" />
+        <attr name="bottomMarginTop" format="dimension" />
+        <attr name="yOffsetStep" format="dimension" />
+        <attr name="widthHeightRate" format="float" />
+    </declare-styleable>
+</resources>

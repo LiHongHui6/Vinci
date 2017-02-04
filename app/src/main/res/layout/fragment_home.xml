@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <!--工具栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:background="@color/colorPink4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="16dp"
+            android:text="Vinci"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/icon_layout_switch"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="64dp"
+            android:background="@mipmap/switch_a" />
+
+        <View
+            android:id="@+id/icon_search"
+            android:layout_width="17.5dp"
+            android:layout_height="17.5dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/search" />
+    </FrameLayout>
+
+    <com.lihonghui.vinci.common.widget.view.DisableViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack2"
+        >
+
+    </com.lihonghui.vinci.common.widget.view.DisableViewPager>
+
+</LinearLayout>
