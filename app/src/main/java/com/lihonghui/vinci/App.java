@@ -11,7 +11,7 @@ import com.lihonghui.vinci.common.utils.LogUtil;
  */
 
 public class App extends Application {
-    private static Context context;
+    private static Context context;//Test
     public static Context getContext(){
         return context;
     }
