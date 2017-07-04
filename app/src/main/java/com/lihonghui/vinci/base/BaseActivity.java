@@ -20,19 +20,26 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     protected View contentView;
     private View mViewBack;
     private TextView mTextTitle;
-    protected BaseActivity mSelf;
+    protected BaseActivity mAcSelf;
     private StatusBarColourHelper mStatusBarColourHelper;
     private FrameLayout mTitleBar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(fullScreenWithOutStatusBar()){
+            this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
+
         setContentView(R.layout.activity_base);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
-        mSelf = this;
+
+        mAcSelf = this;
+
         initParameter();
         findView();
         getData();
@@ -50,6 +57,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     }
 
     public void getData() {
+    }
+
+    protected boolean fullScreenWithOutStatusBar(){
+        return false;
     }
 
     public void initParameter() {
@@ -76,7 +87,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View view) {
         if (view == mViewBack) {
-            mSelf.finishAfterTransition();
+            mAcSelf.finishAfterTransition();
         }
     }
 

@@ -189,7 +189,7 @@ public class DetailActivity extends BaseActivity implements DetailContact.View{
                 bucketDialog.setOnConfirmListener(new BucketDialog.OnConfirmListener() {
                     @Override
                     public void onConfirm(Bucket bucket) {
-                        ToastUtil.showToast(mSelf,"Bucket ID:"+bucket.getId(),ToastUtil.DURATION_LONG);
+                        ToastUtil.showToast(mAcSelf,"Bucket ID:"+bucket.getId(),ToastUtil.DURATION_LONG);
                     }
                 });
             }
@@ -237,8 +237,8 @@ public class DetailActivity extends BaseActivity implements DetailContact.View{
     public void onGetAttachment(List<Attachment> attachments) {
         KLog.e("onGetAttachment "+attachments.size());
         if(mAttachmentListAdapter == null){
-            mAttachmentListAdapter = new AttachmentListAdapter(attachments,mSelf);
-            mAttachmentList.setLayoutManager(new LinearLayoutManager(mSelf,LinearLayoutManager.HORIZONTAL,false));
+            mAttachmentListAdapter = new AttachmentListAdapter(attachments, mAcSelf);
+            mAttachmentList.setLayoutManager(new LinearLayoutManager(mAcSelf,LinearLayoutManager.HORIZONTAL,false));
             mAttachmentList.setAdapter(mAttachmentListAdapter);
         }else{
             mAttachmentListAdapter.setDataAndRefresh(attachments);
@@ -248,8 +248,8 @@ public class DetailActivity extends BaseActivity implements DetailContact.View{
     @Override
     public void onGetComments(List<Comment> commentList) {
         if(mCommentListAdapter == null){
-            mCommentListAdapter = new CommentListAdapter(commentList,mSelf);
-            mCommentList.setLayoutManager(new LinearLayoutManager(mSelf));
+            mCommentListAdapter = new CommentListAdapter(commentList, mAcSelf);
+            mCommentList.setLayoutManager(new LinearLayoutManager(mAcSelf));
             mCommentList.setAdapter(mCommentListAdapter);
         }else{
             mCommentListAdapter.setDataAndRefresh(commentList);
@@ -319,7 +319,7 @@ public class DetailActivity extends BaseActivity implements DetailContact.View{
 
     @Override
     public void onLoadAllComment() {
-        ToastUtil.showToast(mSelf,getResources().getString(R.string.load_all),ToastUtil.DURATION_LONG);
+        ToastUtil.showToast(mAcSelf,getResources().getString(R.string.load_all),ToastUtil.DURATION_LONG);
     }
 
     private void setmAppBarDragEnable(final boolean enable){

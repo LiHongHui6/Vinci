@@ -99,8 +99,8 @@ public class LoginActivity extends BaseActivity implements LoginContact.View {
 
     @Override
     public void onLoginSuccess() {
-        ToastUtil.showToast(mSelf, "登录成功", ToastUtil.DURATION_SHORT);
-        mSelf.finish();
+        ToastUtil.showToast(mAcSelf, "登录成功", ToastUtil.DURATION_SHORT);
+        mAcSelf.finish();
     }
 
     @Override

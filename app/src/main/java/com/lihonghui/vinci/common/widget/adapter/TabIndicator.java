@@ -14,6 +14,7 @@ public interface TabIndicator {
     View getTabView();
 
     class TabViewModel {
+
         String tabTitle;
         String tabIcon;
 
