@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import com.lihonghui.vinci.R;
 import com.lihonghui.vinci.common.utils.DensityUtil;
 import com.lihonghui.vinci.common.utils.DisplayUtil;
+import com.lihonghui.vinci.common.utils.LogUtil;
 
 /**
  * Created by yq05481 on 2016/11/23.
@@ -77,7 +78,7 @@ public class AvatarBehavior extends CoordinatorLayout.Behavior<ImageView> {
         child.offsetLeftAndRight((int) (totalDistanceX * appBarDyPercent));
         child.offsetTopAndBottom((int) (totalDistanceY * appBarDyPercent));
 
-      //  LogUtil.printLog("targetX:"+targetX+"  targetY:"+targetY+"  X:"+child.getX()+"  Y:"+child.getY());
+        LogUtil.printLog("targetX:"+targetX+"  targetY:"+targetY+"  X:"+child.getX()+"  Y:"+child.getY());
         return true;
     }
 }

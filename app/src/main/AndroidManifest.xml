@@ -35,6 +35,10 @@
             android:configChanges="keyboard|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".ExperimentActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".detail.bucket.BucketActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:screenOrientation="portrait" />

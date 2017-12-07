@@ -47,11 +47,8 @@ import java.util.List;
 
 import rx.Subscription;
 
-/**
- * Created by yq05481 on 2016/11/11.
- */
-
 public class PersonalFragment extends BaseFragment {
+
     private AppBarLayout mAppbar;
     private FrameLayout mLayoutFans;
     private TextView mTextFansCount;

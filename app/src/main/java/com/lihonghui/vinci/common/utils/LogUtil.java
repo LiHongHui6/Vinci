@@ -1,5 +1,7 @@
 package com.lihonghui.vinci.common.utils;
 
+import android.util.Log;
+
 import com.socks.library.KLog;
 
 /**
@@ -10,5 +12,9 @@ public class LogUtil {
     private static final String LOG_TAG = "lhh";
     public static void init(boolean enable){
         KLog.init(enable, LOG_TAG);
+    }
+
+    public static void printLog(String s) {
+        KLog.e(s);
     }
 }

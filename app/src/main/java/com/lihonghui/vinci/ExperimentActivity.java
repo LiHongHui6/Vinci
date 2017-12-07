@@ -14,6 +14,7 @@ import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
 import com.bumptech.glide.RequestManager;
+import com.lihonghui.vinci.base.BaseActivity;
 
 import javax.inject.Inject;
 
@@ -30,32 +31,13 @@ import retrofit2.http.POST;
  * Created by yq05481 on 2016/10/27.
  */
 
-public class ExperimentActivity extends AppCompatActivity{
+public class ExperimentActivity extends BaseActivity{
     @Inject
     public RequestManager requestManager;
 
     private ImageView imageView;
     private WebView webView;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experiment);
 
-        imageView = (ImageView)findViewById(R.id.iv_test);
-
-        webView = (WebView)findViewById(R.id.wbv);
-        webView.setBackgroundColor(Color.TRANSPARENT);
-        setUpWebView();
-
-        AppComponent appComponent = DaggerAppComponent.builder().appMoudle(new AppMoudle(this)).build();
-        appComponent.inject(this);
-
-        if(requestManager != null){
-            requestManager.load("http://static.oschina.net/uploads/space/2015/0627/083244_BPCe_2306979.png").into(imageView);
-        }else{
-            Log.e("lhh","Dagger2 配置失败");
-        }
-    }
 
 
 
@@ -136,6 +118,21 @@ public class ExperimentActivity extends AppCompatActivity{
         });
 
         webView.loadUrl(DribbbleOAuth.Login_Url);
+    }
+
+    @Override
+    public int getContentViewResourceID() {
+        return R.layout.activity_experiment;
+    }
+
+    @Override
+    protected boolean getTitleBarVisibility() {
+        return false;
+    }
+
+    @Override
+    public void setUpView() {
+        super.setUpView();
     }
 
     public interface GetAccessTokenApi{
